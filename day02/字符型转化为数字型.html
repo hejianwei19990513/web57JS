@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        // parseInt()转化为整数，直接去掉小数点；如果遇到数字不在首位的，输出为NaN
+        console.log(parseInt('12.21'));
+        console.log(parseFloat('rem120px'));
+
+        // parseFloat()转化为小数，保留小数点，
+        console.log(parseFloat('12.3'));
+        
+        // 保留小数点后几位方法
+        var num = 12.3333333
+            num1=num.toFixed(2)
+        console.log(num1);
+        console.log(typeof num1);
+        console.log(typeof num);
+
+        // Number()
+        console.log(Number('12.65'));
+
+        // 通过除了+的其他算数
+        console.log('123' - 1);
+        console.log('120' * 2);
+        console.log('120' / 2);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

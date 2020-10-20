@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var obj = new Object();
+
+        // 等号赋值，分号隔开
+        obj.name = '姓名：鸣人';
+        obj.sex = '性别：男';
+        obj.age = '年龄：19岁';
+        obj.skill = function (word) {
+            return word
+        }
+
+        console.log(obj.name);
+        console.log(obj['sex']);
+        console.log(obj.skill('技能：影分身之术'));
+    </script>
+</body>
+</html>

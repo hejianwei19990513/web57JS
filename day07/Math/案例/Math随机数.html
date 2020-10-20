@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // function getRandom(min,max) {
+        //     return Math.floor(Math.random()*(max-min+1))+min
+        // }
+        // console.log(getRandom(1,10));
+        
+
+        // // 随机点名
+        // var arr = ['李灿','陈铃','邹威','何建伟']
+        // alert(arr[getRandom(0,arr.length-1)]);
+        
+        function getRandom(min,max) {
+                return Math.floor(Math.random()*(max-min+1))+min
+            };
+
+            // 这里不能写var num = console.log(getRandom(1,10));
+            var num = getRandom(1,1000);
+        for( var i = 1 ; i <=10 ; i++) {
+            var input =prompt('请输入一个1-1000的数，机会只有10次哦');
+            
+            if (input > num) {
+                alert('数字大了，请继续猜')
+            }
+            else if (input < num) {
+                alert('数字小了，请继续猜')
+            }
+            else if (input == num) {
+                alert('恭喜猜对')
+                break
+            }
+            else if (input == '') {
+                alert('请输入数字')
+            }
+            else {
+                alert('很遗憾，您猜错了，请重试！')
+            }
+            if (i ==10) {
+                alert('对不起，您的10次机会已用完，谢谢参与')
+            }
+        }
+    </script>
+</body>
+</html>

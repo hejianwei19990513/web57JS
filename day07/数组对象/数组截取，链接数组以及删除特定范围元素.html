@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr1 = [1,2,3,4,5,6,7,8,9,10]
+            arr2 = [11,12,13,14,15,16,17,18,19,20]
+            // 链接两个数组：变量名.concat(变量名)，变量名可以重复，自己连接自己
+            console.log(arr1.concat(arr1));//返回链接以后的新数组
+
+
+            /* 截取数组特定范围内的元素：变量名.slice(begin,end（不包含）)     
+            注意：这里的begin和end不是索引号，而是数组第几个数。 */
+            console.log(arr1.slice(4,9));//返回截取后的新数组，输出结果为5,6,7,8,9
+            console.log(arr1);//之前执行的截取指令不会影响到原数组，因此还是输出为1,2,3,4,5,6,7,8,9,10
+
+
+            /* 删掉数组里面特定范围内的元素：变量名.splice(第几个数开始,要删除的个数)        
+            注意：这里的第几个数不是索引号，而是数组的第几个数，而且这个操作会影响影响原数组 */
+            console.log(arr2.splice(4,2));//返回被删除元素组成的数组，输出结果为15,16
+            console.log(arr2);//由于之前执行了删除指令影响了该数组，因此输出为11,12,13,14,17,18,19,20
+
+    </script>
+</body>
+</html>

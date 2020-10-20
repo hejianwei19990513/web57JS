@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //     var arr = [1,5,8,34,8,53,587,9,4,2,7,54524,2,1,87,]
+    //     for (var j =1;j<=arr.length-1;j++) {
+    //     for (var i = 0 ; i<arr.length;i++) {
+    //         if (arr[i]>arr[i+1]) {
+    //             var empty=arr[i]
+    //             arr[i]=arr[i+1]
+    //             arr[i+1]=empty
+    //         }
+    //     }
+    // }
+    //     console.log(arr);
+
+    var arr = ['sasa','dsadasd','dsadd','dsadasdmjhghjgh']
+        for (var j =1;j<=arr.length-1;j++) {
+        for (var i = 0 ; i<arr.length;i++) {
+            if (arr[i]>arr[i+1]) {
+                var empty=arr[i]
+                arr[i]=arr[i+1]
+                arr[i+1]=empty
+            }
+        }
+    }
+        console.log(arr);
+
+        /* var word1 = 'sashajsa'
+            word2 = 'sadasdasdasdasd'
+            word3 = 'ss'
+            console.log(word1>word2);t
+            console.log(word1<word2);f
+
+            console.log(word2>word3);f
+            console.log(word2<word3);t
+
+            console.log(word3>word1);t
+            console.log(word3<word1);f */
+            var word1 = 'ss'
+            word2 = 'sa'
+            word3 = 'sb'
+            word4 = 'ssa'
+            console.log(word1>word2);
+            console.log(word2>word3);
+            console.log(word4>word1);
+    </script>
+</body>
+</html>

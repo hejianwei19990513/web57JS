@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var sum=0 
+        for (var i=1 ; i<=100 ; i++) {
+            if (i==10) {
+                //如果if里面条件为真，则直接到此终止此次循环，
+                break
+            }
+            sum+=i
+        }
+        console.log(sum);
+
+
+        var sum1=0 
+        for (var j=1 ; j<=100 ; j++) {
+            sum1+=j
+            if (j==10) {
+                //如果if里面条件为真，则直接到此终止此次循环，与continue一样，在if语句上面的代码仍然还会执行一次，再终止循环。
+                break
+            }
+        }
+        console.log(sum1);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

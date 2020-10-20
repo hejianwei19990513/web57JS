@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var arr = [1, 21, 323, 123, 123, 12, 31]
+
+        // 翻转数组，返回值是新数组
+        console.log(arr.reverse());
+
+        // 排序数组,返回值是新数组
+        console.log(arr.sort());//这个不是按照大小顺序排列，是按照第一个数字从小到大排列，然后第二位数，依次下去
+
+        console.log(arr.sort(function (a, b) {
+            // 升序排列
+            // return a - b
+
+            // 降序排列
+                return b-a
+        }));
+    </script>
+</body>
+
+</html>

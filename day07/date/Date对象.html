@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 因为Date是一个构造函数，所以需要用new来调用
+        var date = new Date()
+        console.log(date);
+
+        //getFullyear()是获取当年年份
+        console.log(date.getFullYear());
+
+        // getMonth()是获取当年月份，因为月份里面是0-11，所以输出的月份比想得到的月份少1，需要加1
+        console.log(date.getMonth() + 1);
+
+        // getDate()是获取当月日期（多少号）
+        console.log(date.getDate());
+
+        // getHours()是获取当天时间的小时
+        console.log(date.getHours());
+
+        // getMinutes()是获取当天时间的分钟
+        console.log(date.getMinutes());
+
+        // getSeconds()是获取当天时间的秒
+        console.log(date.getSeconds());
+    </script>
+</body>
+</html>

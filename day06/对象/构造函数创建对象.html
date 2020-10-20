@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // 构造函数创建对象：
+
+        // 构造函数：
+        function Star(name,age,sex) {
+            this.name=name;
+            this.age=age;
+            this.sex=sex;
+            this.action=function(action) {
+                // return action;
+                console.log(action);
+            }
+        }
+
+        // 对象：是一个具体的实物
+        var jjy = new Star('鞠婧祎',26,'女')
+        for (k in jjy) {
+            console.log(k);
+            console.log(jjy[k]);
+        }
+        // console.log(jjy.name);
+        // console.log(jjy.age);
+        // console.log(jjy['sex']);
+        // console.log(jjy.action('如意芳菲'));
+
+
+        var zhz = new Star('张翰哲',28,'男')
+        console.log(zhz);
+        // console.log(zhz.name);
+        // console.log(zhz.age);
+        // console.log(zhz['sex']);
+        // console.log(zhz.action('如意芳菲'));
+    </script>
+</body>
+</html>

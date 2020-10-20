@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // 当形参个数与实参相等时：
+        // 声明函数getSum()里面的是形参
+        function getSum(num1,num2) {
+            console.log(num1+num2);
+        }
+        // 调用函数代码getSum()里面的是实参
+        getSum(1,2)//正常输出
+
+        // 当形参个数小于实参时：
+        function getSum(num1,num2) {
+            console.log(num1+num2);
+        }
+        getSum(1,2,6)//从前到后匹配到形参的最后一个，多余的实参无效
+
+        // 当形参个数小于实参时：
+        function getSum(num1,num2) {
+            console.log(num1+num2);
+        }
+        getSum(1)//从前到后匹配到实的最后一个，多余的形参是undefined，1+undefined=NaN，所以输出结果是NaN
+    </script>
+</body>
+</html>

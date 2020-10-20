@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 取绝对值
+        console.log(Math.abs(-1));//输出值为1
+        console.log(Math.abs('-3'));//会隐式转换，会自动把字符串型的数字变成数字型的数字，所以输出为3
+        console.log(Math.abs('小鞠女神'));//输出结果为NaN
+
+        // 取整的三种情况
+        // 第一种情况，floor(地板)取整；往小了取；
+        console.log(Math.floor(1.1,1.9));//输出为1  1
+        console.log(Math.floor(-1.1));//因为往小了取，所以输出结果为-2
+
+        // 第二种情况，ceil(天花板)取整，往大了取；
+        console.log(Math.ceil(1.1));//输出为2
+        console.log(Math.ceil(-1.9));//因为往大了取，所以输出结果为-1
+
+        // 第三种情况，round，取整，四舍五入，注意，如果是负数且是.5就往大了取
+        console.log(Math.round(-1.4));
+        console.log(Math.round(-1.7));
+        console.log(Math.round(-1.5));//特殊情况，往大了取，所以不是-2，是-1
+    </script>
+</body>
+</html>

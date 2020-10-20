@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // replace()替换字符串指定字符为另一个字符，（这里只会替换第一个字符，要想全部替换后面的同一个字符就得用循环）
+        var str = 'absss'
+        console.log(str.replace('s','z'));
+
+        // split('分隔符')字符串转化为数组，注意：如果不写分隔符，就会默认字符串为一个数组元素,
+        var str1 = 'abcdefg漫天都是小妖精'
+        var str2 = 'abcdefg,漫天都是小妖精'
+        console.log(str1.split(''));//这里默认所有字符串都隔开，因此输出为14个数组元素。
+        console.log(str2.spilt(','));//这里分隔符是逗号','，而字符串str2里面'abcdefg'和'漫天都是小妖精用逗号','隔开，因此输出为['abcdefg','漫天都是小妖精']
+    </script>
+</body>
+</html>

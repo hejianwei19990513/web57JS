@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // 第一种方法
+        var arr=[1,4,7,11,15,19,23]
+        arr_empty=[]
+        for (var i =0; i<arr.length;i++) {
+            if (arr[i]>10) {
+                arr_empty[arr_empty.length]=arr[i]
+            }
+        }
+        console.log(arr_empty);
+
+
+        // 第二种方法
+        var arr=[1,4,7,11,15,19,23]
+        arr_empty=[]
+        j=0
+        for (var i =0; i<arr.length;i++) {
+            if (arr[i]>10) {
+                arr_empty[j]=arr[i]
+                j++
+            }
+        }
+        console.log(arr_empty);
+    </script>
+</body>
+</html>

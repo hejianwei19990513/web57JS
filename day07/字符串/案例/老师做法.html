@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var str = 'abcoefoxyozzoppoooo';
+        var obj = {};
+        for (var i = 0 ; i < str.length ; i++) {
+
+            // 这里为什么能把str[i]这个字符串传到空对象obj里面去
+            if (obj[str[i]]) {
+                obj[str[i]]++
+            }
+            else {
+                obj[str[i]]=1
+            }
+        }
+        console.log(obj);
+
+        var obj1 = {
+            a:10,
+            b:10,
+            c:10,
+            d:10,
+        }
+        obj['a'];
+        console.log(typeof Boolean(obj1['a']));
+
+    </script>
+</body>
+</html>

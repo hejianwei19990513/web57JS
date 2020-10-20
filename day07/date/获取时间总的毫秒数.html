@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 第一种获取时间的方法
+        var date = new Date();
+        console.log(date.getTime());
+
+        // 第二种：
+        var date = new Date();
+        console.log(date.valueOf());
+
+        // 第三种：
+        var date1 = +new Date()
+        console.log(date1);
+
+        // 第四种：这种方法只适合获取现在的时间，在括号里输入将来的时间不会有效果，还是现在的时间到1970的总毫秒数
+        console.log(Date.now());
+        console.log(Date.now('2020-11-01 00:00:00'));//这种写法获取未来时间的总毫秒数是错误的
+    </script>
+</body>
+
+</html>

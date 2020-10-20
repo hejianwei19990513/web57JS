@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        fn();
+        console.log(a);
+        console.log(b);
+        console.log(c);
+        function fn() {
+            var a=b=c=9;//集中声明变量是逗号隔开，例如：var a=9,b=9,c=9;
+            console.log(a);
+            console.log(b);
+            console.log(c);
+        }
+
+        // 等价于以下代码：
+        function fn() {
+            var a;
+            a=b=c=9//此时b，c为全局变量
+            console.log(a);//因此这里输出为9
+            console.log(b);//因此这里输出为9
+            console.log(c);//因此这里输出为9
+        }
+        fn();
+        console.log(c);//因为函数里面的b，c没有声明，为全局变量，因此这里输出为9
+        console.log(b);//因为函数里面的b，c没有声明，为全局变量，因此这里输出为9
+        console.log(a);//因为函数里面的a有声明，为函数内部的局部变量，因此这里输出为报错，即a is not defined
+    </script>
+</body>
+</html>

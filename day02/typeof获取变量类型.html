@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        // typeof输出的结果(以下五种情况)就是一个黑色字体即字符串
+        console.log(typeof 18);//输出为黑色字体的numbe，即相当于'number'
+        // 例如
+        console.log(typeof(typeof 18));//等价于console.log(typeof 'number')，输出为string，
+
+        // 输出为黑色字体即字符串型的number(数字型)
+        var type = 1;
+        console.log(typeof type);
+
+        // 输出为黑色字体即字符串型的string(字符串型)
+        var type = '小鞠女神';
+        console.log(typeof type);
+        
+        // 输出为黑色字体即字符串型的boolean(布尔型)
+        var type = true;
+        console.log(typeof type); 
+
+        // 输出为黑色字体即字符串型的undefined
+        var a;
+        console.log(typeof a); 
+
+        // 输出为黑色字体即字符串型的object（null）
+        var type = null;
+        console.log(typeof type); 
+
+        // promot
+        var un = prompt('请输入想显示的数据类型')
+        console.log(typeof un);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        console.log(true && false);//此时输出为false
+
+        // 逻辑与运算&&，当两个表达式进行逻辑与&&运算时，若第一个为真，则返回表达式第二个(输出表达式2)，若第一个为假，后面运算 直接终止  ，返回表达式1(输出表达式1)
+        console.log(123 && 456);//此时输出为456，数字里面除了0为假，其他都为真
+        console.log(0 && 2123 + 12* 12);//此时输出为0
+        console.log('' && 21313414);//此时输出为''空值
+        console.log(undefined && 32131231);//此时输出为undefined
+        console.log(null && 123131);//此时输出为null
+        console.log(NaN && 123123);//此时输出为NaN
+        console.log(12 && 12 + 12 *12);//此时输出为12+144=156
+
+        // 逻辑或运算||，当两个表达式进行逻辑或||运算时，若第一个为真，后面运算   终止  ，直接返回表达式第1个(输出表达式1)，若第一个为假，，则返回表达式2(输出表达式2)
+        console.log(123 || 345);//此时输出为123
+        
+        var num = 1
+        console.log(123 || ++num);//此时直接输出为123，后面的++num不运行，num=1
+        console.log(num);//此时输出为1，++num没有运行，所以num仍为1
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

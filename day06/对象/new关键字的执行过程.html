@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // new执行代码的过程：
+        // 1.在内存中创建一个空对象；
+        // 2.在构造函数里面设置this属性指向这个对象；
+        // 3.执行构造函数里面的代码，给这个空对象添加this属性的属性和方法；
+        // 4.返回值给对象(构造函数不需要return返回值)
+        function Star (name,age,sex) {
+            this.name=name;
+            this.age=age;
+            this.sex=sex;
+            this.action=function() {
+                console.log();
+            }
+        }
+        var jjy = new Star('鞠婧祎',26,'女')
+        console.log(jjy);
+    </script>
+</body>
+</html>

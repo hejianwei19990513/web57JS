@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 布尔型boolean与数字计算时，ture默认为1,false默认为0,与字符串相连接时，还是守字符串运算规则
+        var  a =  true; 
+             b = false;
+        console.log(a + 1);
+        console.log(b + 1);
+        console.log(a + '女神');
+
+        // undefined与字符串和数字的情况，与数字相连显示NaN，与字符串还是遵守字符串的规则
+        var u ;
+        console.log(u + 1);
+        console.log(u + '大哥');
+
+        // null与字符串和数字的情况，与数字相连表示空值即0，与字符串还是遵守字符串的规则
+        var u = null;
+        console.log(u + 1);
+        console.log(u + '大哥');
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

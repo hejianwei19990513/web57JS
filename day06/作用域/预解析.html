@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //  1. js引擎会把声明的变量提升到当前作用域的最上面，再从上至下依次执行代码
+        //  2. js引擎会把声明的函数也提升到当前作用域的上面，再从上至下依次执行代码
+
+        console.log(num);
+        var num = 10//输出结果为undefined
+        // 上面等价于下面
+        var num;
+        console.log(num);
+        num = 10//因此会报错
+
+
+
+        fun()
+        var fun = function() {
+            console.log(num1);
+        }
+        // 上面的等价于下面
+        var fun ;
+        fun();//这里显示调用变量名为fun的函数，但是上面没有fun的函数，所以会报错。
+        fun = function() {
+            console.log(num1);
+        }
+
+    </script>
+</body>
+</html>

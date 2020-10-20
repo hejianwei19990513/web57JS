@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /* // 大于等于
+        console.log(10 >= 9);//此时输出为true
+
+        // 小于等于
+        console.log(11 <= 12);//此时输出为false
+
+        // 等于==比较运算符会自动将字符串类型转化为数字型
+        console.log(10 == '10');//此时输出为true
+
+        // 不等于
+        console.log(10 != 10);//此时输出为false
+
+        // 全等于===比较运算符要求数据类型和值都相等，不会自动转换。
+        console.log(10 === '10');//此时输出为false
+
+        // 不全等于
+        console.log(10 !== '10');//此时输出为true */
+
+        var obj = {
+
+            name: 'zhangsan',
+
+            sayHi: function () {
+
+                console.log(this.name)
+
+            }
+
+        }
+        var fnName = 'sayHi'
+        obj['sayHi']()
+        obj[fnName]
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var achievement = prompt('请输入您的成绩')
+        if (achievement >= 90 && achievement <= 150) {
+            alert('A')
+        }
+        else if (achievement < 90 && achievement >= 80) {
+            alert('B')
+        }
+        else if (achievement < 80 && achievement >= 70) {
+            alert('C')
+        }
+        else if (achievement < 70 && achievement >= 60) {
+            alert('D')
+        }
+        else if (achievement < 60 && achievement >=0) {
+            alert('F')
+        }
+        else if (achievement > 150) {
+            alert('你真敢打出这个分数啊')
+        }
+        else if (achievement < 0) {
+            alert('您的智商为负数，建议回炉重造')
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // 函数的作业，可以多次重复使用相同的代码块，不用复制粘贴
+        //函数的定义：声明函数，函数的函数明加小括号(),括号里面都是小写.
+        function getSum(num1,num2) {
+            var sum = 0
+            for (var i = num1; i <= num2;i++) {
+                sum+=i
+            }
+            console.log(sum);
+        }
+
+        // 调用函数，如果只声明函数不写调用函数的代码，则该函数不会执行
+        getSum(1,100);
+    </script>
+</body>
+</html>

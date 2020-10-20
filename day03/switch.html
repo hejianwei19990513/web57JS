@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var num = 1
+        switch (1) {
+            case (1) :
+            console.log(num++);
+
+            case (2) : 
+            console.log(num++);
+            break;
+            default : 
+            console.log(num);
+        }//由于case(1)后面的break;被删了，导致匹配到case(1)仍然会运行下面的case直到出现break为止，如果下面的case一直没有break，则会运行到底部也就是default结束，所以这个程序输出出来显示为case(1) 结果是1，(此时num=2)，运行到有break的case(2)显示结果为2，(此时num=3，但是由于输出的是num++，所以这个条件对这个switch结果没影响)，最终结果为1 \n 2
+        switch (1) {
+            case (2) :
+            console.log(num++);
+
+            case (1) : 
+            console.log(num++);
+            break;
+            default : 
+            console.log(num);
+        }//由于直接匹配到case(1)，导致没有break的case(2)直接跳过，不运行，所以只用看有break的case(1) ，结果为3，注意：上面的程序运行完的时候num=3
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

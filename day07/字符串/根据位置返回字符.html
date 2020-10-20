@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var str = '小鞠女神';
+        
+        // 第一种方法：根据位置（索引号）返回字符
+        console.log(str.charAt(1));//输出结果为鞠
+
+        // 第二种方法：根据位置（索引号）返回字符的ACSII码，用来判断用户按下了哪个键
+        console.log(str.charCodeAt(1));
+
+        // 第三种方法：根据位置（索引号）返回字符，与第一种类似，比它更简洁，但是只在新增h5,IE8+支持
+        console.log(str[1]);
+
+    </script>
+</body>
+</html>

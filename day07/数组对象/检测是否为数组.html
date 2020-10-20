@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr = new Array(2);//当空数组括号里面只有一个数时，这个2代表这个空数组的数组长度
+        var arr1= new Array(1,2);//当空数组括号里面有多个数时，这个1,2代表给空数组添加1,2两个数组元素
+        console.log(arr);
+        console.log(arr1);
+
+        //检测是否为数组
+        var obj = {};
+        console.log(arr instanceof Array);
+        console.log(obj instanceof Array);
+        console.log(Array.isArray(obj));
+    </script>
+</body>
+</html>

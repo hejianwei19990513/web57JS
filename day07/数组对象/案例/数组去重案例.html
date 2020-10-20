@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function unique(arr) {
+            var arrNew = []
+            for(var i = 0 ; i < arr.length ; i++) {
+
+                // 这里检测arr的元素在arrNew里面有没有重复的，由于刚开始arrNew是空数组，因此，第一个不重复的数都会显示-1（因为如果indexOf()=-1是在数组检测不到该数时才会显示-1），后面一旦有重复的数字陆续放进去，就不会显示-1，会显示在新数组里面第一个该数的索引号
+                if (arrNew.indexOf(arr[i])===-1) {
+                    arrNew.push(arr[i])
+                }
+            }
+            console.log(arrNew);
+        }
+        unique([1,21,1,2,2,2,2,2,3,3,4,5,543,34,21])
+    </script>
+</body>
+</html>

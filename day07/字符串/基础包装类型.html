@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var str = '小鞠女神'
+        console.log(str.length);
+        /* 我们前面讲的字符串是简单数据类型，为什么会有属性和属性值？？？
+        基本包装类型：把简单类型包装秤复杂类型 */
+        // 第一步：把简单数据类型包装成复杂数据类型；
+        var temp = new String('andy');
+
+        // 第二步：把临时变量的值给到str；
+        var str = temp 
+
+        // 第三步：销毁这个临时变量；
+        temp=null
+
+    </script>
+</body>
+</html>

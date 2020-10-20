@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // 第一种方法，
+        var empty;
+        var arr=[3,543,342,564,23425425454245245,4543,31241,31231,2,333333333]
+        for (var i=0 ; i<(arr.length-1);i++) {
+            // 这里arr.length比索引号大1，所以i<9，即当i=8时，arr[9]>arr[8]
+            if (arr[i]>arr[i+1]) {
+                empty = arr[i]
+                arr[i]=arr[i+1]
+                arr[i+1]=empty
+            }
+        }
+        console.log(empty);
+
+        //第二种方法
+        var arr=[3,543,342,564,23425425454245245,4543,31241,31231,2,333333333]
+            max=arr[0]
+        for (var i=1 ; i<arr.length;i++) {
+            if (arr[i]>max) {
+                max=arr[i]
+            }
+        }
+        console.log(max);
+
+    </script>
+</body>
+</html>

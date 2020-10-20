@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        function fn() {
+            // 只要变量名前面加了var(即声明)，就是局部变量，
+            var num1 = 1
+
+            // 只要变量名前面没加var(即没声明)，就是全局变量
+                num2 = 2
+        }
+        fn();
+
+        // 全局变量作用于全部，因此调用函数,num2会输出出来，但是不太节约内存
+        console.log(num2);
+
+        // 局部变量只作用于函数内部，执行完即销毁，因此节约内存
+        console.log(num1);
+    </script>
+</body>
+
+</html>

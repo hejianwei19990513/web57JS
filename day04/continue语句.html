@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var sum = 0
+        for (var i=1 ; i<=100 ; i++) {
+            if(i % 7 ==0) {
+                //如果条件为真，则不执行这次循环，继续剩下的循环次数。
+                continue
+            }
+            sum+=i
+        }
+        console.log(sum);
+
+        var sum1 = 0
+        for (var j=1 ; j<=100 ; j++) {
+            sum1+=j
+            if(j % 7 ==0) {
+                //如果这个if语句在需要进行循环内容的下面，则对在其上面的循环内容无效，仅仅只是对if语句下面的循环内容不执行这次
+                continue
+            }
+        }
+        console.log(sum1);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

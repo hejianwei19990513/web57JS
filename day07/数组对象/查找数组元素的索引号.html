@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr = [1,21,32,312,31,3,123,123]
+
+        // indexOf()括号里面为想要查询的元素的索引号，如果数组里面有重复的，会显示数组里面第一个该元素的索引号，如果没有该元素，会显示-1
+        console.log(arr.indexOf(123));//因为这里arr里面有两个123，所以会输出第一个123的索引号，所以会输出结果6；
+        console.log(arr.indexOf(10));//因为这里arr里面没有10，所以输出-1
+
+
+        // includes()
+        console.log(arr.includes('xiao'));//不包含就显示false
+
+        // lastindexOf()括号里面为想要查询的元素的索引号，如果数组里面有重复的，会显示最后一个该元素的索引号，如果没有该元素，会显示-1
+        console.log(arr.lastIndexOf(123));//因为这里arr里面有两个123，所以会输出最后一个123的索引号，所以会输出结果7；
+        console.log(arr.lastIndexOf(10));//因为这里arr里面没有10，所以输出-1
+    </script>
+</body>
+</html>

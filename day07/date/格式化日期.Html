@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function date() {
+            var date= new Date();
+            var year = date.getFullYear();
+            var month= date.getMonth() + 1;
+            var dates = date.getDate();//日期
+            var arr  = ['星期日','星期一','星期二','星期三','星期四','星期五','星期六']
+            var day  = arr[date.getDay()]
+            return '今天是: ' + year + '年' + month + '月' + dates + '日' + ' ' + day
+        }
+        console.log(date());
+    </script>
+</body>
+</html>
